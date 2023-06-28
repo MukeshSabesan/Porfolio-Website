@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukesh Sabesan</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@800&family=Press+Start+2P&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de89b5f9bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container"> 
+            <nav>         
+                <h1 class="name"><span class="gold">M</span>ukesh</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#design-work">Design Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-regular fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>   
+            </nav>
+            <div class="header-text">
+                <div class="header-items">
+                    <p>Software Engineer</p>
+                    <h1>Hi, I'm Mukesh <br>Sabesan!</h1>
+                    <p>Resume: <a href="photos/Resume - Mukesh Sabesan.pdf" download><i class="fa-solid fa-file-lines"></i></i></a></p>                       
+                </div>
+                <div class="header-items">
+                    <img src="photos/homepagesignature.png" alt="">
+                </div>              
+            </div>
+        </div>
+    </div>
+    <!--about section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photos/aboutme.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about-me">I am a Software Engineering student at Toronto Metropolitan University. I am a passionate and ambitious person with a drive to 
+                        come up with creative ideas and innovations. I love engineering because it challenges me to take on difficult tasks to engineer
+                        something for the people, and allows me to use my knowledge and skills to come up with anything. I have a passion for developing
+                        and designing software that is beneficial for all. You can find out more about my projects and the work I have done by exploring this page!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>2022-Present</span><br>Student Mentor and Tutor at TutorBright</li>
+                            <li><span>2021</span><br>Warehouse Associate at Protagon Display</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Present</span><br>Bachelor's Degree in Software Engineering from Toronto Metropolitan University</li>
+                            <li><span>2017-2021</span><br>OSSD from SATEC@W.A. Porter Collegiate Institute</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>HTML5/CSS3/JavaScript</span><br>Building, designing and maintaining websites.</li>
+                            <li><span>Java and C#</span><br>Building Applications and Working with Object Oriented Design.<li>
+                            <li><span>C</span><br>Working with Data Structures and Algorithms.<li>
+                            <li><span>Python</span><br>Developing Software and working with AI and Machine Learning.<li>
+                            <li><span>Intel Quartus Prime and VHDL</span><br>System design, modelling and processor designing.<li>
+                            <li><span>AutoCAD</span><br>2D and 3D modelling and rendering.<li>
+                            <li><span>Git/GitHub</span><br>Creating repositories for projects and collaborating to improve upon current software.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+
+    <!--Projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="photos/pong.png">
+                    <div class="layer">
+                        <h2>Pong Game</h2>
+                        <p>I created a game of pong using <br>Java, JavaAWT and Swing.</p>
+                        <a href="https://github.com/MukeshSabesan/Pong-Game" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photos/aimtrainer.png">
+                    <div class="layer">
+                        <h2>Aim Trainer</h2>
+                        <p>I developed an aim trainer<br> inspired by aimtrainer.io and AimLab <br> using Python and Pygame.</p>
+                        <a href="https://github.com/MukeshSabesan/Aim-Trainer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Design Work-->
+    <div id="design-work">
+            <div class="row">
+                <div class="design-col-1">
+                        <img src="photos/Brainstorm Bay app icon.png" alt="">
+                        <img src="photos/Design Version 3 positive screen.png" alt="">
+                </div>
+                <div class="design-col-2">
+                    <h1 class="subtitle">Design Work</h1>
+                    <p>I have a passion for designing and coming up with concepts. Everything that comes to my mind I try to conceptualize it. This can range from app designs and logos to even jersey designs and logos. To the left are examples of the design works I have done. Below is a link to a folder of all my design works. Enjoy!</p>         
+                    <i class="fa-brands fa-google-drive  fa-2xl"></i>
+                        <a href="https://drive.google.com/drive/folders/1wmVp1vf1YFm7GZYQ7vwOFNymiKEo0sDh?usp=sharing" target="_blank">
+                           <button class="btn"> 
+                                <h2>Google Drive Folder</h2>
+                           </button>
+                        </a>
+                    
+                </div>
+                
+            </div>
+    </div>
+
+    <!--contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mukesh.sabesan@gmail.com</p>
+                    <p><i class="fa-solid fa-building-columns"></i>mukesh.sabesan@torontomu.ca</p>
+                    <p><i class="fa-solid fa-phone"></i> 6476877258</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mukesh-sabesan-8132201ba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/MukeshSabesan" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/MukeshSabesan" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/mukesh.sabesan/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mukesh.sb_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        } 
+        
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQ7jB79jfAwsKtx1iGhHoef28Ag97OPGtgNc5IE4RFWkehAPILxsHCRyC9gOkJwNH7sg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
