@@ -130,9 +130,9 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img{
-    width: 110%;
-    margin-right: 100px;
-    border-radius: 50px;
+    width: 100%;
+    margin-right: 200px;
+    border-radius: 50%;
 
 }
 
@@ -411,7 +411,7 @@ form input, form textarea{
 .btn{
     display: inline-block;
     margin: 50px auto;
-    width: fit-content;
+    width: fit-content; 
     border: 1px solid gold;
     background: rgb(32, 42, 68);
     padding: 14px 50px;
